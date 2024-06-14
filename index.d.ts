@@ -1,11 +1,11 @@
-import type { Children } from "react";
+import type { ChildrenProps } from "react";
 import type { FetchQueryOptions } from "@tanstack/react-query";
 
 /**
  * SKN React Query Type Extension & Client Library
  *
  * @author SKN Shukhan
- * @version 1.0.5
+ * @version 1.0.6
  * @since 2024-06-14
  * */
 declare module "@tanstack/react-query" {
@@ -78,7 +78,7 @@ declare module "@tanstack/react-query" {
    *
    * @since v1.0.0
    * */
-  interface QueryHydrationProps extends Children {
+  interface QueryHydrationProps extends ChildrenProps {
     queryKey: FetchQueryOptions["queryKey"];
     queryFn: FetchQueryOptions["queryFn"];
   }

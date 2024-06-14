@@ -1,7 +1,7 @@
 {
   "name": "@best-skn/next-query",
   "description": "A Simple React Query Type Extension & Client Library For Next.js 14",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "commonjs",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -15,6 +15,46 @@
       "import": {
         "types": "./dist/index.d.mts",
         "default": "./dist/index.mjs"
+      }
+    },
+    "./contexts": {
+      "require": {
+        "types": "./dist/contexts/index.d.ts",
+        "default": "./dist/contexts/index.js"
+      },
+      "import": {
+        "types": "./dist/contexts/index.d.mts",
+        "default": "./dist/contexts/index.mjs"
+      }
+    },
+    "./contexts/ReactQueryClientProvider": {
+      "require": {
+        "types": "./dist/contexts/ReactQueryClientProvider.d.ts",
+        "default": "./dist/contexts/ReactQueryClientProvider.js"
+      },
+      "import": {
+        "types": "./dist/contexts/ReactQueryClientProvider.d.mts",
+        "default": "./dist/contexts/ReactQueryClientProvider.mjs"
+      }
+    },
+    "./server": {
+      "require": {
+        "types": "./dist/server/index.d.ts",
+        "default": "./dist/server/index.js"
+      },
+      "import": {
+        "types": "./dist/server/index.d.mts",
+        "default": "./dist/server/index.mjs"
+      }
+    },
+    "./server/ReactQueryHydration": {
+      "require": {
+        "types": "./dist/server/ReactQueryHydration.d.ts",
+        "default": "./dist/server/ReactQueryHydration.js"
+      },
+      "import": {
+        "types": "./dist/server/ReactQueryHydration.d.mts",
+        "default": "./dist/server/ReactQueryHydration.mjs"
       }
     },
     "./types": {
@@ -49,12 +89,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@best-skn/react-types": "^1.0.5",
     "@types/node": "^20.14.2",
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
+    "@best-skn/react-types": "^1.1.0",
     "@tanstack/react-query": ">= 5.45.0 < 6",
     "@types/react": ">= 18.3.3 < 19",
     "@types/react-dom": ">= 18.3.0 < 19",
@@ -64,5 +104,8 @@
   },
   "scripts": {
     "build": "tsup"
+  },
+  "dependencies": {
+    "server-only": "^0.0.1"
   }
 }
