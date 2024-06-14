@@ -1,7 +1,7 @@
 import { defineConfig, type Options } from "tsup";
 
 const tsupConfig = {
-  entry: ["./src/**/*.ts", "./src/**/*.tsx"],
+  entry: ["./src/index.ts"],
   minify: true,
   format: ["cjs", "esm"],
   clean: true,

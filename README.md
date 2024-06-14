@@ -24,19 +24,18 @@
 - It has all the configurations to handle `Next.js streaming` in `loading.tsx ✅`
 - This function can be used in both react server & client components in Next.js
 - It is created as the instruction given in the
-  official [Tanstack React Query](https://tanstack.com/query/v5/docs/framework/react/guides/advanced-ssr) for Next.js
+  official [Tanstack React Query](https://tanstack.com/query/v5/docs/framework/react/guides/advanced-ssr) documentation
+  for Next.js
   SSR
 - For usage instruction, see `Usage` section
 
 ### **`QueryHydrationProps` Type**
 
 - The interface of props for React Server Component as data hydrator from server to client in Next.js
+- It has `children`, `queryKey` & `queryFn` properties
 - This interface is intended to be used in server side only i.e. only inside server components
 - The data hydrator component will hold a react client component as child where the data will be re-fetched
 - Inside the child component, use `useSuspenseQuery ✅` instead of `useQuery ❌`
-- It is created as the instruction given in the
-  official [Tanstack React Query](https://tanstack.com/query/v5/docs/framework/react/guides/advanced-ssr) for Next.js
-  SSR
 - For usage instruction, see `Usage` section
 
 &nbsp;
@@ -55,12 +54,15 @@
 
 ### This library is intended to be used in Next.js of minimum 14.2.3. It may or may not work on 15.x
 
+### It also has peer dependency for Best SKN React Types of minimum 1.1.1.
+
 - 💀 Minimum [react](https://www.npmjs.com/package/react) Version: `18.3.1`
 - 💀 Minimum [@types/react](https://www.npmjs.com/package/@types/react) Version: `18.3.3`
 - 💀 Minimum [react-dom](https://www.npmjs.com/package/react-dom) Version: `18.3.1`
 - 💀 Minimum [@types/react-dom](https://www.npmjs.com/package/@types/react-dom) Version: `18.3.0`
 - 💀 Minimum [next](https://www.npmjs.com/package/next) Version: `14.2.3`
 - 💀 Minimum [react query](https://www.npmjs.com/package/@tanstack/react-query) Version: `5.45.0`
+- 💀 Minimum [@best-skn/react-types](https://www.npmjs.com/package/@best-skn/react-types) Version: `1.1.1`
 
 &nbsp;
 
@@ -130,6 +132,7 @@
 > import { dehydrate, HydrationBoundary, type QueryHydrationProps } from "@tanstack/react-query";
 > import { getQueryClient } from "@best-skn/next-query";
 >
+> // * `React.SFC` type comes from another package `@best-skn/react-types`
 > const ReactQueryHydration: React.SFC<QueryHydrationProps> = (props) => {
 >   const { children, queryKey, queryFn } = props;
 >
