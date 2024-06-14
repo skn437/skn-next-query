@@ -1,11 +1,11 @@
 {
   "name": "@best-skn/next-query",
   "description": "A Simple React Query Type Extension & Client Library For Next.js 14",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "commonjs",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
-  "types": "index.d.ts",
+  "types": "src/types/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/index.js",
@@ -15,7 +15,7 @@
   "files": [
     "dist",
     "types",
-    "index.d.ts"
+    "src/types/index.d.ts"
   ],
   "repository": {
     "type": "git",
