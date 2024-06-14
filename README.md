@@ -88,7 +88,7 @@
 ### Create a directory called `types` in the root location of your project, and create a file called `query.d.ts`, then do this
 
 > ```typescript
-> import "@best-skn/next-query";
+> import "@best-skn/next-query/types";
 > ```
 
 ### Check your `tsconfig.json` if `includes` property has `**/*.ts` or not otherwise the type definition file may not work
