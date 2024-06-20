@@ -296,11 +296,10 @@
       "license": "MIT"
     },
     "node_modules/@types/node": {
-      "version": "20.14.2",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.14.2.tgz",
-      "integrity": "sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==",
+      "version": "20.14.6",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.14.6.tgz",
+      "integrity": "sha512-JbA0XIJPL1IiNnU7PFxDXyfAwcwVVrOoqyzzyQTyMeVhBzkJVMSkC1LlVsRQ2lpqiY4n6Bb9oCS6lzDKVQxbZw==",
       "dev": true,
-      "license": "MIT",
       "dependencies": {
         "undici-types": "~5.26.4"
       }
@@ -1521,12 +1520,6 @@
       "dependencies": {
         "loose-envify": "^1.1.0"
       }
-    },
-    "node_modules/server-only": {
-      "version": "0.0.1",
-      "resolved": "https://registry.npmjs.org/server-only/-/server-only-0.0.1.tgz",
-      "integrity": "sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==",
-      "license": "MIT"
     },
     "node_modules/shebang-command": {
       "version": "2.0.0",
