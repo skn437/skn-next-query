@@ -5,7 +5,7 @@ import type { FetchQueryOptions } from "@tanstack/react-query";
  * SKN React Query Type Extension & Client Library
  *
  * @author SKN Shukhan
- * @version 1.0.7
+ * @version 1.0.8
  * @since 2024-06-14
  * */
 declare module "@tanstack/react-query" {
@@ -47,11 +47,9 @@ declare module "@tanstack/react-query" {
    * const Users: React.SFC<unknown> = () => {
    *   return (
    *     <ReactQueryHydration
-   *       props={{
-   *         queryKey: ["users"], // the query id
-   *         queryFn: getUserData, // the query function that fetches data
-   *       }}
-   *      >
+   *       queryKey={["users"]} // the query id
+   *       queryFn={getUserData} // the query function that fetches data
+   *     >
    *       <UserPageComponent/>
    *     </ReactQueryHydration>
    *   );

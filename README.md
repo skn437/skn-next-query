@@ -54,7 +54,7 @@
 
 ### This library is intended to be used in Next.js of minimum 14.2.3. It may or may not work on 15.x
 
-### It also has peer dependency for Best SKN React Types of minimum 1.1.1.
+### It also has peer dependency for Best SKN React Types of minimum 1.1.1
 
 - 💀 Minimum [react](https://www.npmjs.com/package/react) Version: `18.3.1`
 - 💀 Minimum [@types/react](https://www.npmjs.com/package/@types/react) Version: `18.3.3`
@@ -93,7 +93,7 @@
 > import "@best-skn/next-query/types";
 > ```
 
-### Check your `tsconfig.json` if `includes` property has `**/*.ts` or not otherwise the type definition file may not work
+### Check your `tsconfig.json`, if `includes` property has `**/*.ts` & `**/*.tsx` or not otherwise the type definition file may not work
 
 ### Now Inside your Next.js 14 Project, use the package like this (Just an example)
 
@@ -161,10 +161,8 @@
 > const Users: React.SFC<unknown> = () => {
 >   return (
 >     <ReactQueryHydration
->       props={{
->         queryKey: ["users"], // the query id
->         queryFn: getUserData, // the query function that fetches data
->       }}
+>       queryKey={["users"]} // the query id
+>       queryFn={getUserData} // the query function that fetches data
 >     >
 >       <UserPageComponent />
 >     </ReactQueryHydration>
@@ -179,6 +177,8 @@
 > ```typescript jsx
 > //* The child component
 > "use client";
+>
+> //* Imports here
 >
 > const UserPageComponent: React.FC<unknown> = () => {
 >   const { data } = useSuspenseQuery({
