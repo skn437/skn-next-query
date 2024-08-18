@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="Docker Compose">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Docker Compose" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="docker-compose.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Lefthook">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Lefthook" />
+              <option name="relativePathToSchema" value="https://json.schemastore.org/lefthook.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="lefthook.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="Taskfile">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="Taskfile" />
+              <option name="relativePathToSchema" value="https://taskfile.dev/schema.json" />
+              <option name="schemaVersion" value="JSON Schema version 7" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value=".github/taskfile.yaml" />
+                  </Item>
+                  <Item>
+                    <option name="path" value=".project/taskfile.yaml" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="taskfile.yaml" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="webservices/docker/taskfile.yaml" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="webservices/kubernetes/taskfile.yaml" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>
