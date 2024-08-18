@@ -1,7 +1,7 @@
 {
   "name": "@best-skn/next-query",
   "description": "A Simple React Query Type Extension & Client Library For Next.js 14",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "commonjs",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

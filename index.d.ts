@@ -5,7 +5,7 @@ import type { FetchQueryOptions } from "@tanstack/react-query";
  * SKN React Query Type Extension & Client Library
  *
  * @author SKN Shukhan
- * @version 1.0.8
+ * @version 1.0.9
  * @since 2024-06-14
  * */
 declare module "@tanstack/react-query" {
